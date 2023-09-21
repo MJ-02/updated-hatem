@@ -15,10 +15,6 @@ import os
 from langchain.agents import Tool
 from langchain.agents import initialize_agent
 
-OPENAI_API_KEY = "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"
-PINECONE_API_KEY = "200041bf-c55e-4fa5-bcc8-3e986f7b2766"
-PINECONE_API_ENV = "northamerica-northeast1-gcp"
-COHERE_API_KEY = "pyBY3uGmd1kZgkjgQDkIGoZQUZMPVkoCToLkVLRb"
 
 
 
