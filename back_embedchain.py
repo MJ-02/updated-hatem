@@ -49,10 +49,8 @@ def choose_doc() -> jsonify:
         for book in docs:
             tawjihi_bot.add(f"example_pdfs/{book}", "pdf_file")
     except Exception as e:
-        log(f"Error {e}")
         return jsonify("Internal Server Error"), 500
     else:
-        log("User Chose {sub}")
         return jsonify("Book chosen!"), 200
     
 
@@ -67,10 +65,8 @@ def answer_query() -> jsonify:
         response = tawjihi_bot.chat(user_query)
         response_data = {'message': response}
     except Exception as e:
-        log(f"Error {e}")
         return jsonify("Internal Server Error"), 500
     else:
-        log(f"Question: {user_query}, Answer: {response}")
         return jsonify(response_data), 200
 
 
