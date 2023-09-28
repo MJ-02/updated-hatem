@@ -47,7 +47,7 @@ def choose_doc() -> jsonify:
         sub = data["subject"]
         docs = document_dict[sub]
         for book in docs:
-            tawjihi_bot.add(f"example pdfs/{book}", "pdf_file")
+            tawjihi_bot.add(f"example_pdfs/{book}", "pdf_file")
     except Exception as e:
         log(f"Error {e}")
         return jsonify("Internal Server Error"), 500
